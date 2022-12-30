@@ -1,7 +1,10 @@
-from pytube import YouTube
+#Coded by Kavindu Sandaruwan
+#Copying and reposting without permission of the owner is strictly prohibited.
 
+from pytube import YouTube
 #Video details function
 def detail_and_thumb():
+    print()
     url1 = str(input("[*] Enter Video Link: "))
     data1 = YouTube(url1)
     print("Video Title is: ",data1.title)
@@ -10,6 +13,7 @@ def detail_and_thumb():
 
 #Video Download function
 def video_down():
+    print()
     url2 = str(input("[*] Enter Video Link: "))
     data2 = YouTube(url2)
     video = data2.streams.all()
@@ -34,21 +38,28 @@ def video_down():
 
 #Videoa audio function
 def audio():
+    print()
     url3 = str(input("[*] Enter Video Link: "))
     data3 = YouTube(url3)
     video2 = data3.streams.filter(only_audio=True)
     vid2 = list(enumerate(video2))
-    for j in vid2:
-        print(j)
+    #for j in vid2:
+        #print(j)
+    print()
+    print(" Audio Resolution : [1] mp4  [2] webm")
     print()
     ask2 = int(input("[*] Enter your choise: "))
+    if ask2 == 1:
+        video2[1].download()
+    elif ask2 == 2:
+        video2[4].download()
+    else:
+        print("Error")
     print("Working on it......")
     print("Start Download your Audio.....")
-    video2[ask2].download()
+    #video2[ask2].download()
     print("Done")
 #audio()
-
-
 
 ch = 0
 #Graphical user interface
