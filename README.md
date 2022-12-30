@@ -3,7 +3,7 @@
 <h2>You can download YouTube videos, Thumbnails and many more...</h2>
 <h3>Installation.......</h3>
 <h2>In Termux terminal</h2>
-<h3>$ pkg update</h3>
+<p>$ pkg update</p>
 <h3>$ pkg upgrade</h3>
 <h3>$ pkg install python</h3>
 <h3>$ pkg install git</h3>
