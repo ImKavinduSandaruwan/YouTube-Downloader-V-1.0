@@ -3,10 +3,10 @@
 <h3>Installation.......</h3>
 <h2>In Termux terminal</h2>
 <h3>$ pkg update</h3>
-$ pkg upgrade
-$ pkg install python
-$ pkg install git
-$ pip install pytube
-$ git clone : link
-$ cd YouTube-Downloader
-$ python main.py
+<h3>$ pkg upgrade</h3>
+<h3>$ pkg install python</h3>
+<h3>$ pkg install git</h3>
+<h3>$ pip install pytube</h3>
+<h3>$ git clone : link</h3>
+<h3>$ cd YouTube-Downloader</h3>
+<h3>$ python main.py</h3>
