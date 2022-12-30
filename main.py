@@ -14,14 +14,41 @@ def video_down():
     data2 = YouTube(url2)
     video = data2.streams.all()
     vid = list(enumerate(video))
-    for i in vid:
-        print(i)
-    ask = int(input("[*] Enter your choice: "))
+   #for i in vid:
+       #print(i)
+    print()
+    print(" Video Resolution : [1] 360p  [2] 480p ")
+    res = int(input("[*] Choose Video Resolution: "))
+    if res == 1:
+        video[1].download()
+    elif res == 2:
+        video[11].download()
+    else:
+        print("You entered invalid number......")
+    print()
     print("Working on it......")
     print("Start Download your video.....")
-    video[ask].download()
     print("Done")
+    print()
 #video_down()
+
+#Videoa audio function
+def audio():
+    url3 = str(input("[*] Enter Video Link: "))
+    data3 = YouTube(url3)
+    video2 = data3.streams.filter(only_audio=True)
+    vid2 = list(enumerate(video2))
+    for j in vid2:
+        print(j)
+    print()
+    ask2 = int(input("[*] Enter your choise: "))
+    print("Working on it......")
+    print("Start Download your Audio.....")
+    video2[ask2].download()
+    print("Done")
+#audio()
+
+
 
 ch = 0
 #Graphical user interface
@@ -46,7 +73,7 @@ def main():
     elif ch == 2:
         detail_and_thumb()
     elif ch == 3:
-        print("I'm still working on it")
+        audio()
     elif ch == 4:
         print("Follow me on Github: https://github.com/ImKavinduSandaruwan")
     elif ch == 5:
@@ -54,3 +81,4 @@ def main():
     else:
         print("Invalid number:")
 main()
+
